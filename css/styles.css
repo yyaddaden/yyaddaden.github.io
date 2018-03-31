@@ -1,0 +1,60 @@
+#id-about{
+	background-image: url("../img/about-op.jpeg");
+}
+
+#id-writing{
+	background-image: url("../img/writing-op.jpeg");
+}
+
+#id-work{
+	background-image: url("../img/work-op.jpg");
+}
+
+#id-education{
+	background-image: url("../img/education-op.jpeg");
+}
+
+.bg-img{
+	background-size: auto;   
+	background-size: cover; 
+	background-position: center;
+}
+
+.bg-color{
+	background-color: #F0F0F0;
+}
+
+.btn-menu{
+	position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+}
+
+.item .image{
+	border: 1px solid black;
+}
+
+#img-profile{
+	margin: auto;
+	margin-bottom: 50px;
+	border:5px solid white;
+}
+
+#div-profile{
+	margin-top: 75px;
+}
+
+.slide{
+text-align:center;
+}
+
+.cards{
+text-align:center;
+}
+
+#div-links{
+	position: relative;
+	margin-top: 100px;
+	text-align: center;
+}
