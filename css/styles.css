@@ -32,13 +32,17 @@
 }
 
 .item .image{
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
-#img-profile{
+#img-profile-side{
 	margin: auto;
 	margin-bottom: 50px;
 	border:5px solid white;
+}
+
+#img-profile-main{
+	border: 2px solid black;
 }
 
 #div-profile{
