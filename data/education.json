@@ -1,0 +1,34 @@
+{
+	"1":{
+		"img": "img/uqac.png",
+		"title": "Ph.D Student | Computer Sciences",
+		"university": "Université du Québec à Chicoutimi",
+		"url": "https://www.uqac.ca/",
+		"location": "(Québec, Canada)",
+		"date": "September 2015 - Now"	
+	},
+	"2":{
+		"img": "img/usthb.png",
+		"title": "Ph.D Student | Information & Communication Technologies",
+		"university": "University of Sciences and Technology Houari Boumediene",
+		"url": "http://www.usthb.dz/",
+		"location": "(Algiers, Algeria)",
+		"date": "December 2012 - September 2015"	
+	},
+	"3":{
+		"img": "img/usthb.png",
+		"title": "Master's Degree | Electrical Engineering",
+		"university": "University of Sciences and Technology Houari Boumediene",
+		"url": "http://www.usthb.dz/",
+		"location": "(Algiers, Algeria)",
+		"date": "September 2010 - July 2012"	
+	},
+	"4":{
+		"img": "img/usthb.png",
+		"title": "Bachelor's Degree | Electrical Engineering",
+		"university": "University of Sciences and Technology Houari Boumediene",
+		"url": "http://www.usthb.dz/",
+		"location": "(Algiers, Algeria)",
+		"date": "September 2007 - June 2010"	
+	}
+}

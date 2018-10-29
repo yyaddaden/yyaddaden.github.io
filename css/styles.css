@@ -26,7 +26,14 @@
 
 .btn-menu{
 	position: absolute;
-    top: 50px;
+	right: 50px;
+	top: 50px;
+	z-index: 1;
+}
+
+.btn-top{
+	position: absolute;
+    bottom: 50px;
     right: 50px;
     z-index: 1;
 }
@@ -61,4 +68,32 @@ text-align:center;
 	position: relative;
 	margin-top: 100px;
 	text-align: center;
+}
+
+.fp-slidesNav{
+	text-align: center;
+}
+
+#about_test{
+	background: rgba(255, 255, 255, .9);
+}
+
+#template_news{
+	overflow-y: auto;
+	max-height: 175px;
+}
+
+#template_work{
+	overflow-y: auto;	
+	max-height: 437px;
+}
+
+#template_publication{
+	overflow-y: auto;	
+	max-height: 437px;
+}
+
+#template_education{
+	overflow-y: auto;	
+	max-height: 437px;
 }
