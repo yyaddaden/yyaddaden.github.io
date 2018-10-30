@@ -11,7 +11,7 @@
 	"2":{
 		"img": "img/iet.png",
 		"type": "International Conference",
-		"date": "July 11 - 13 July 2017",
+		"date": "11 - 13 July 2017",
 		"doi": "DOI: 10.1049/cp.2017.0133",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Facial expression recognition from video using geometric features,' in Proceedings of the 8th International Conference on Pattern Recognition Systems, IET, 2017, pp. 1-6.",
 		"bibtex": "bibtex/yaddaden_02.bib",
@@ -20,7 +20,7 @@
 	"3":{
 		"img": "img/ieee.png",
 		"type": "International Conference",
-		"date": "4 August - 8 August 2017",
+		"date": "4 - 8 August 2017",
 		"doi": "DOI: 10.1109/UIC-ATC.2017.8397536",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Facial expressions based error detection for smart environment using deep learning,' in Ubiquitous Intelligence Computing (UIC), IEEE, 2017, pp. 1-7.",
 		"bibtex": "bibtex/yaddaden_03.bib",
@@ -38,7 +38,7 @@
 	"5":{
 		"img": "img/ieee.png",
 		"type": "International Conference",
-		"date": "29 August - 31 August 2018",
+		"date": "29 - 31 August 2018",
 		"doi": "DOI: ",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Hybrid-based Facial Expression Recognition Approach for Human-Computer Interaction,' in International Workshop on Multimedia Signal Processing (MMSP’18), IEEE, 2018, pp. 1-6.",
 		"bibtex": "bibtex/yaddaden_05.bib",

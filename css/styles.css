@@ -74,13 +74,9 @@ text-align:center;
 	text-align: center;
 }
 
-#about_test{
-	background: rgba(255, 255, 255, .9);
-}
-
 #template_news{
 	overflow-y: auto;
-	max-height: 175px;
+	max-height: 125px;
 }
 
 #template_work{
@@ -96,4 +92,8 @@ text-align:center;
 #template_education{
 	overflow-y: auto;	
 	max-height: 437px;
+}
+
+.ui.segment{
+	background-color: rgba(255, 255, 255, 0.9);
 }
