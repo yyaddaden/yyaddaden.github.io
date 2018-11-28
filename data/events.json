@@ -22,5 +22,17 @@
 	"6":{
 		"event_date": "13 October 2018",
 		"event_title": "Paper Acceptance in the International Conference on Applied Smart Systems (IEEE)"
+	},
+	"7":{
+		"event_date": "1 November 2018",
+		"event_title": "Paper Acceptance in the International Conference on Signal, Image, Vision and their Applications (IEEE)"
+	},
+	"8":{
+		"event_date": "24 - 25 November 2018",
+		"event_title": "Paper Presentation in the International Conference on Applied Smart Systems (IEEE)"
+	},
+	"9":{
+		"event_date": "26 - 27 November 2018",
+		"event_title": "Paper Presentation in the 4th International Conference on Signal, Image, Vision and their Applications (IEEE)"
 	}
 }

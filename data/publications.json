@@ -43,5 +43,23 @@
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Hybrid-based Facial Expression Recognition Approach for Human-Computer Interaction,' in International Workshop on Multimedia Signal Processing (MMSP’18), IEEE, 2018, pp. 1-6.",
 		"bibtex": "bibtex/yaddaden_05.bib",
 		"url": ""
+	},
+	"6":{
+		"img": "img/ieee.png",
+		"type": "International Conference",
+		"date": "24 - 25 November 2018",
+		"doi": "DOI: ",
+		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'One-Class and Bi-Class SVM Classifier Comparison for Automatic Facial Expression Recognition,' in International Conference on Applied Smart Systems (ICASS’18), IEEE, 2018, pp. 1-6.",
+		"bibtex": "bibtex/yaddaden_06.bib",
+		"url": ""
+	},
+	"7":{
+		"img": "img/ieee.png",
+		"type": "International Conference",
+		"date": "26 - 27 November 2018",
+		"doi": "DOI: ",
+		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Facial Sub-region for automatic Emotion Recognition using Local Binary Patterns,' in International Conference on Signal, Image, Vision and their Applications (SIVA’18), IEEE, 2018, pp. 1-6.",
+		"bibtex": "bibtex/yaddaden_07.bib",
+		"url": ""
 	}
 }

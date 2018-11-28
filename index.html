@@ -151,7 +151,7 @@
 		</script>
 
 		<script type="text/javascript">
-			for (var idx = 6; idx > 0; idx--){
+			for (var idx = 9; idx > 0; idx--){
 				$('#template_news').append('<div id="event_' + idx + '" class="item"></div>');
 				$('#event_' + idx).load('templates/event.html');
 			}; 
@@ -161,7 +161,7 @@
 				$('#work_' + idx).load('templates/work.html');
 			};
 
-			for (var idx = 5; idx > 0; idx--){
+			for (var idx = 7; idx > 0; idx--){
 				$('#template_publication').append('<div id="publication_' + idx + '" class="item"></div>');
 				$('#publication_' + idx).load('templates/publications.html');
 			};
@@ -175,7 +175,7 @@
 		<script type="text/javascript">
 			$(document).ready(function(){	
 				$.getJSON('data/events.json', function(json_data) {
-					for (var idx = 6; idx > 0; idx--){	
+					for (var idx = 9; idx > 0; idx--){	
 						idx_str = String(idx);
 						$('#event_' + idx + ' font').text(json_data[idx_str]["event_title"]);
 						$('#event_' + idx + ' .header').text(json_data[idx_str]["event_date"]);
@@ -195,7 +195,7 @@
 				});	
 
 				$.getJSON('data/publications.json', function(json_data) {
-					for (var idx = 5; idx > 0; idx--){	
+					for (var idx = 7; idx > 0; idx--){	
 						idx_str = String(idx);
 						$('#publication_' + idx + ' img').attr('src', json_data[idx_str]["img"]);
 						$('#publication_' + idx + ' .header').text(json_data[idx_str]["type"]);
