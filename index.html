@@ -206,14 +206,11 @@
 			}
 			
 			/* news & events templates */
-			getJsonData('data/events.json', function(json_data){
-				json_events_size = Object.keys(json_data).length;
 
-				for (var idx = json_events_size; idx > 0; idx--){	
-					$('#template_news').append('<div id="event_' + idx + '" class="item event"></div>');
-					$('#event_' + idx).load('templates/event.html');
-				}
-			});
+			for (var idx = 9; idx > 0; idx--){	
+				$('#template_news').append('<div id="event_' + idx + '" class="item event"></div>');
+				$('#event_' + idx).load('templates/event.html');
+			}
 
 			/* work templates */
 			getJsonData('data/work.json', function(json_data){
