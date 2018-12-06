@@ -204,43 +204,32 @@
 					callback(json_data);
 				});
 			}
-			
-			/* news & events templates */
+			var nbr_elt = {"events":9, "work":4, "publications":7, "education":4};
 
-			for (var idx = 9; idx > 0; idx--){	
+			/* news & events templates */
+			for (var idx = nbr_elt["events"]; idx > 0; idx--){	
 				$('#template_news').append('<div id="event_' + idx + '" class="item event"></div>');
 				$('#event_' + idx).load('templates/event.html');
 			}
 
 			/* work templates */
-			getJsonData('data/work.json', function(json_data){
-				json_work_size = Object.keys(json_data).length;
-
-				for (var idx = 1; idx <= json_work_size; idx++){	
-					$('#template_work').append('<div id="work_' + idx + '" class="item"></div>');
-					$('#work_' + idx).load('templates/work.html');
-				}
-			});
+			for (var idx = 1; idx <= nbr_elt["work"]; idx++){	
+				$('#template_work').append('<div id="work_' + idx + '" class="item"></div>');
+				$('#work_' + idx).load('templates/work.html');
+			}
 
 			/* publications templates */
-			getJsonData('data/publications.json', function(json_data){
-				json_publications_size = Object.keys(json_data).length;
-
-				for (var idx = json_publications_size; idx > 0; idx--){	
-					$('#template_publication').append('<div id="publication_' + idx + '" class="item publication"></div>');
-					$('#publication_' + idx).load('templates/publications.html');					
-				}
-			});
+			for (var idx = nbr_elt["publications"]; idx > 0; idx--){	
+				$('#template_publication').append('<div id="publication_' + idx + '" class="item publication"></div>');
+				$('#publication_' + idx).load('templates/publications.html');					
+			}
 
 			/* education templates */
-			getJsonData('data/education.json', function(json_data){
-				json_education_size = Object.keys(json_data).length;
-
-				for (var idx = 1; idx <= json_education_size; idx++){	
-					$('#template_education').append('<div id="education_' + idx + '" class="item"></div>');
-					$('#education_' + idx).load('templates/education.html');					
-				}
-			});			
+			for (var idx = 1; idx <= nbr_elt["education"]; idx++){	
+				$('#template_education').append('<div id="education_' + idx + '" class="item"></div>');
+				$('#education_' + idx).load('templates/education.html');					
+			}
+		
 			/* laod menu and about parts */
 			$('#template_menu').load('templates/menu.html');
 			$('#template_about').load('templates/about.html');
