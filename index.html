@@ -244,7 +244,12 @@
 					$('#education_' + idx).load('templates/education.html');					
 				}
 			});			
-			
+			/* laod menu and about parts */
+			$('#template_menu').load('templates/menu.html');
+			$('#template_about').load('templates/about.html');
+		</script>
+
+		<script type="text/javascript">
 			/* add data in html */
 			$(document).ready(function(){
 
@@ -306,7 +311,7 @@
 						}
 					}
 				});			
-				
+
 				getJsonData('data/education.json', function(json_data){
 					json_education_size = Object.keys(json_data).length;
 
@@ -320,10 +325,6 @@
 					}
 				});										
 			});
-		
-			/* laod menu and about parts */
-			$('#template_menu').load('templates/menu.html');
-			$('#template_about').load('templates/about.html');
 		</script>
 	</body>
 </html>
