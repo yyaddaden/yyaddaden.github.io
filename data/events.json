@@ -1,38 +1,56 @@
 {
 	"1":{
 		"event_date": "29 June - 1 July 2016",
-		"event_title": "Paper Presentation in the 9th International Conference on PErvasive Technologies Related to Assistive Environments (ACM)"
+		"event_title": "Presentation in the 9th International Conference on PErvasive Technologies Related to Assistive Environments",
+		"editor": "ACM",
+		"year": "2016"
 	},
 	"2":{
 		"event_date": "11 - 13 August 2017",
-		"event_title": "Paper Presentation in the 8th International Conference on Pattern Recognition Systems (IET)"
+		"event_title": "Presentation in the 8th International Conference on Pattern Recognition Systems",
+		"editor": "IET",
+		"year": "2017"
 	},
 	"3":{
 		"event_date": "4 - 8 August 2017",
-		"event_title": "Paper Presentation in the 14th International Conference on Ubiquitous Intelligence and Computings (IEEE)"
+		"event_title": "Presentation in the 14th International Conference on Ubiquitous Intelligence and Computings",
+		"editor": "IEEE",
+		"year": "2017"
 	},
 	"4":{
 		"event_date": "14 June 2018",
-		"event_title": "Paper publication in Journal of Expert Systems with Applications (Elsevier)"
+		"event_title": "Publication in Journal of Expert Systems with Applications",
+		"editor": "Elsevier",
+		"year": "2018"
 	},
 	"5":{
 		"event_date": "29 - 31 August 2018",
-		"event_title": "Paper Presentation in the 20th International Workshop on Multimedia Signal Processing (IEEE)"
+		"event_title": "Presentation in the 20th International Workshop on Multimedia Signal Processing",
+		"editor": "IEEE",
+		"year": "2018"
 	},
 	"6":{
 		"event_date": "13 October 2018",
-		"event_title": "Paper Acceptance in the International Conference on Applied Smart Systems (IEEE)"
+		"event_title": "Paper Acceptance in the International Conference on Applied Smart Systems",
+		"editor": "IEEE",
+		"year": "2018"
 	},
 	"7":{
 		"event_date": "1 November 2018",
-		"event_title": "Paper Acceptance in the International Conference on Signal, Image, Vision and their Applications (IEEE)"
+		"event_title": "Paper Acceptance in the International Conference on Signal, Image, Vision and their Applications",
+		"editor": "IEEE",
+		"year": "2018"
 	},
 	"8":{
 		"event_date": "24 - 25 November 2018",
-		"event_title": "Paper Presentation in the International Conference on Applied Smart Systems (IEEE)"
+		"event_title": "Presentation in the International Conference on Applied Smart Systems",
+		"editor": "IEEE",
+		"year": "2018"
 	},
 	"9":{
 		"event_date": "26 - 27 November 2018",
-		"event_title": "Paper Presentation in the 4th International Conference on Signal, Image, Vision and their Applications (IEEE)"
+		"event_title": "Presentation in the 4th International Conference on Signal, Image, Vision and their Applications",
+		"editor": "IEEE",
+		"year": "2018"
 	}
 }

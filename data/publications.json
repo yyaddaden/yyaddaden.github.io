@@ -6,7 +6,9 @@
 		"doi": "DOI: 10.1145/2910674.2910703",
 		"reference": "Y. Yaddaden, A. Bouzouane, M. Adda, S. Gaboury, B. Bouchard, 'A new approach of facial expression recognition for ambient assisted living,' in Proceedings of the 9th ACM international conference on PErvasive Technologies Related to Assistive environments (PETRA’16), ACM, 2016, pp. 14 :1-14 :8.",
 		"bibtex": "bibtex/yaddaden_01.bib",
-		"url": "https://doi.org/10.1145/2910674.2910703" 
+		"url": "https://doi.org/10.1145/2910674.2910703",
+		"year": "2016",
+		"pdf_file":"pdf/yaddaden_01.pdf"
 	},
 	"2":{
 		"img": "img/iet.png",
@@ -15,7 +17,9 @@
 		"doi": "DOI: 10.1049/cp.2017.0133",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Facial expression recognition from video using geometric features,' in Proceedings of the 8th International Conference on Pattern Recognition Systems, IET, 2017, pp. 1-6.",
 		"bibtex": "bibtex/yaddaden_02.bib",
-		"url": "https://doi.org/10.1049/cp.2017.0133"
+		"url": "https://doi.org/10.1049/cp.2017.0133",
+		"year": "2017",
+		"pdf_file":"pdf/yaddaden_02.pdf"
 	},
 	"3":{
 		"img": "img/ieee.png",
@@ -24,7 +28,9 @@
 		"doi": "DOI: 10.1109/UIC-ATC.2017.8397536",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Facial expressions based error detection for smart environment using deep learning,' in Ubiquitous Intelligence Computing (UIC), IEEE, 2017, pp. 1-7.",
 		"bibtex": "bibtex/yaddaden_03.bib",
-		"url": "https://doi.org/10.1109/UIC-ATC.2017.8397536"
+		"url": "https://doi.org/10.1109/UIC-ATC.2017.8397536",
+		"year": "2017",
+		"pdf_file":"pdf/yaddaden_03.pdf"
 	},
 	"4":{
 		"img": "img/elsevier.png",
@@ -33,16 +39,20 @@
 		"doi": "DOI: 10.1016/j.eswa.2018.06.033",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'User action and facial expression recognition for error detection system in an ambient assisted environment,' in Journal of Expert Systems with Applications, Elsevier, vol. 112, 2018, pp.173-189.",
 		"bibtex": "bibtex/yaddaden_04.bib",
-		"url": "https://doi.org/10.1016/j.eswa.2018.06.033"
+		"url": "https://doi.org/10.1016/j.eswa.2018.06.033",
+		"year": "2018",
+		"pdf_file":""
 	},
 	"5":{
 		"img": "img/ieee.png",
 		"type": "International Conference",
 		"date": "29 - 31 August 2018",
-		"doi": "DOI: ",
+		"doi": "DOI: 10.1109/MMSP.2018.8547081",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Hybrid-based Facial Expression Recognition Approach for Human-Computer Interaction,' in International Workshop on Multimedia Signal Processing (MMSP’18), IEEE, 2018, pp. 1-6.",
 		"bibtex": "bibtex/yaddaden_05.bib",
-		"url": ""
+		"url": "https://doi.org/10.1109/MMSP.2018.8547081",
+		"year": "2018",
+		"pdf_file":""
 	},
 	"6":{
 		"img": "img/ieee.png",
@@ -51,7 +61,9 @@
 		"doi": "DOI: ",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'One-Class and Bi-Class SVM Classifier Comparison for Automatic Facial Expression Recognition,' in International Conference on Applied Smart Systems (ICASS’18), IEEE, 2018, pp. 1-6.",
 		"bibtex": "bibtex/yaddaden_06.bib",
-		"url": ""
+		"url": "",
+		"year": "2018",
+		"pdf_file":""
 	},
 	"7":{
 		"img": "img/ieee.png",
@@ -60,6 +72,8 @@
 		"doi": "DOI: ",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Facial Sub-region for automatic Emotion Recognition using Local Binary Patterns,' in International Conference on Signal, Image, Vision and their Applications (SIVA’18), IEEE, 2018, pp. 1-6.",
 		"bibtex": "bibtex/yaddaden_07.bib",
-		"url": ""
+		"url": "",
+		"year": "2018",
+		"pdf_file":""
 	}
 }

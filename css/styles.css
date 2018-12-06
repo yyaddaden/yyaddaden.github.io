@@ -77,21 +77,25 @@ text-align:center;
 #template_news{
 	overflow-y: auto;
 	max-height: 125px;
+	min-height: 125px;
 }
 
 #template_work{
 	overflow-y: auto;	
-	max-height: 437px;
+	max-height: 420px;
+	min-height: 420px;
 }
 
 #template_publication{
 	overflow-y: auto;	
-	max-height: 437px;
+	max-height: 420px;
+	min-height: 420px;
 }
 
 #template_education{
 	overflow-y: auto;	
-	max-height: 437px;
+	max-height: 420px;
+	min-height: 420px;
 }
 
 .ui.segment{

@@ -20,6 +20,34 @@
 	</head>
 	<body>
 
+		<script type="text/javascript">
+			$(document).ready(function(){	
+				$('.ui.dropdown.event_year').dropdown({
+					onChange: function (value) {
+						if(value == "all"){
+							$('.event').show();
+						}
+						else{
+							$('.event').hide();
+							$('.event.' + value).show();
+						}
+					}
+				});
+				
+				$('.ui.dropdown.publication_year').dropdown({
+					onChange: function (value) {
+						if(value == "all"){
+							$('.publication').show();
+						}
+						else{
+							$('.publication').hide();
+							$('.publication.' + value).show();
+						}
+					}
+    			});
+			});
+		</script>
+
 		<div class="ui sidebar inverted vertical menu" id="template_menu">
 			<!-- Menu template import -->
 	  	</div>
@@ -41,10 +69,21 @@
 						<h4 class="ui header label ribbon blue">
 							<i class="paper plane icon"></i>
 							<div class="content">
-								NEWS
+								NEWS  &emsp;     
+								<div class="ui selection mini dropdown event_year">
+									<input type="hidden" name="event_year">
+									<i class="dropdown icon"></i>
+									<div class="default text">Filter by Year</div>
+									<div class="menu" id="event_year">
+										<!-- News year filters import -->
+										<div class="item" data-value="all" data-text="All">
+											All
+										</div>
+									</div>
+								</div>
 							</div>
 						</h4>
-						<div id="template_news" class="ui relaxed divided list">
+						<div id="template_news" class="ui relaxed list">
 							<!-- News template import -->
 						</div>
 					</div>
@@ -94,11 +133,22 @@
 						<h4 class="ui header label ribbon blue">
 							<i class="book icon"></i>
 							<div class="content">
-								PUBLICATIONS
+								PUBLICATIONS   &emsp;     
+								<div class="ui selection mini dropdown publication_year">
+									<input type="hidden" name="publication_year">
+									<i class="dropdown icon"></i>
+									<div class="default text">Filter by Year</div>
+									<div class="menu" id="publication_year">
+										<!-- News year filters import -->
+										<div class="item" data-value="all" data-text="All">
+											All
+										</div>
+									</div>
+								</div>
 							</div>
 						</h4>
 
-						<div id="template_publication" class="ui divided items">
+						<div id="template_publication" class="ui items">
 							<!-- publication template import -->
 						</div>
 					</div>
@@ -146,79 +196,134 @@
 		</div>
 
 		<script type="text/javascript">
+			/* load data from json files */
+			function getJsonData(url_json, callback) {
+				var json_data = [];
+				$.getJSON(url_json, function(json_raw) {
+					json_data = json_raw;
+					callback(json_data);
+				});
+			}
+			
+			/* news & events templates */
+			getJsonData('data/events.json', function(json_data){
+				json_events_size = Object.keys(json_data).length;
+
+				for (var idx = json_events_size; idx > 0; idx--){	
+					$('#template_news').append('<div id="event_' + idx + '" class="item event"></div>');
+					$('#event_' + idx).load('templates/event.html');
+				}
+			});
+
+			/* work templates */
+			getJsonData('data/work.json', function(json_data){
+				json_work_size = Object.keys(json_data).length;
+
+				for (var idx = 1; idx <= json_work_size; idx++){	
+					$('#template_work').append('<div id="work_' + idx + '" class="item"></div>');
+					$('#work_' + idx).load('templates/work.html');
+				}
+			});
+
+			/* publications templates */
+			getJsonData('data/publications.json', function(json_data){
+				json_publications_size = Object.keys(json_data).length;
+
+				for (var idx = json_publications_size; idx > 0; idx--){	
+					$('#template_publication').append('<div id="publication_' + idx + '" class="item publication"></div>');
+					$('#publication_' + idx).load('templates/publications.html');					
+				}
+			});
+
+			/* education templates */
+			getJsonData('data/education.json', function(json_data){
+				json_education_size = Object.keys(json_data).length;
+
+				for (var idx = 1; idx <= json_education_size; idx++){	
+					$('#template_education').append('<div id="education_' + idx + '" class="item"></div>');
+					$('#education_' + idx).load('templates/education.html');					
+				}
+			});			
+			
+			/* add data in html */
+			$(document).ready(function(){
+
+				getJsonData('data/events.json', function(json_data){
+					json_events_size = Object.keys(json_data).length;
+					events_year = [];
+
+					for (var idx = json_events_size; idx > 0; idx--){
+						$('#event_' + idx).addClass(json_data[idx]["year"]);
+						$('#event_' + idx + ' font').text(json_data[idx]["event_title"]);
+						$('#event_' + idx + ' .header').text(json_data[idx]["event_date"] + " (" + json_data[idx]["editor"] + ")");
+
+						if(!events_year.includes(json_data[idx]["year"])){
+							year = json_data[idx]["year"];
+							events_year.push(year);
+							$('#event_year').append('<div class="item" data-value="' + year + '" data-text="' + year + '">' + year + '</div>');
+						}
+					}
+				});
+
+				getJsonData('data/work.json', function(json_data){
+					json_work_size = Object.keys(json_data).length;
+
+					for (var idx = json_work_size; idx > 0; idx--){
+						$('#work_' + idx + ' img').attr('src', json_data[idx]["img"]);
+						$('#work_' + idx + ' .header').text(json_data[idx]["title"]);
+						$('#work_' + idx + ' .work_location_1 a').attr('href', json_data[idx]["url"]);
+						$('#work_' + idx + ' .work_location_1 a').text(json_data[idx]["company"]);
+						$('#work_' + idx + ' .work_location_2').text(json_data[idx]["location"]);
+						$('#work_' + idx + ' .extra').text(json_data[idx]["date"]);
+					}
+				});
+
+				getJsonData('data/publications.json', function(json_data){
+					json_publications_size = Object.keys(json_data).length;			
+					publications_year = [];
+					
+					for (var idx = json_publications_size; idx > 0; idx--){
+						$('#publication_' + idx).addClass(json_data[idx]["year"]);
+						$('#publication_' + idx + ' img').attr('src', json_data[idx]["img"]);
+						$('#publication_' + idx + ' .header').text(json_data[idx]["type"]);
+						$('#publication_' + idx + ' .date').text(json_data[idx]["date"]);
+						$('#publication_' + idx + ' .doi').text(json_data[idx]["doi"]);
+						$('#publication_' + idx + ' .description p').text(json_data[idx]["reference"]);
+						$('#publication_' + idx + ' .link').attr('href', json_data[idx]["url"]);
+						$('#publication_' + idx + ' .bibtex').attr('href', json_data[idx]["bibtex"]);
+
+						if(!publications_year.includes(json_data[idx]["year"])){
+							year = json_data[idx]["year"];
+							publications_year.push(year);
+							$('#publication_year').append('<div class="item" data-value="' + year + '" data-text="' + year + '">' + year + '</div>');
+						}
+
+						if(json_data[idx]["pdf_file"] != ""){
+							$('#publication_' + idx + ' .pdf').attr('href', json_data[idx]["pdf_file"]);
+						}
+						else{
+							$('#publication_' + idx + ' .pdf').hide();
+						}
+					}
+				});			
+				
+				getJsonData('data/education.json', function(json_data){
+					json_education_size = Object.keys(json_data).length;
+
+					for (var idx = json_education_size; idx > 0; idx--){
+						$('#education_' + idx + ' img').attr('src', json_data[idx]["img"]);
+						$('#education_' + idx + ' .header').text(json_data[idx]["title"]);
+						$('#education_' + idx + ' .university_location_1 a').attr('href', json_data[idx]["url"]);
+						$('#education_' + idx + ' .university_location_1 a').text(json_data[idx]["university"]);
+						$('#education_' + idx + ' .university_location_2').text(json_data[idx]["location"]);
+						$('#education_' + idx + ' .extra').text(json_data[idx]["date"]);						
+					}
+				});										
+			});
+		
+			/* laod menu and about parts */
 			$('#template_menu').load('templates/menu.html');
 			$('#template_about').load('templates/about.html');
-		</script>
-
-		<script type="text/javascript">
-			for (var idx = 9; idx > 0; idx--){
-				$('#template_news').append('<div id="event_' + idx + '" class="item"></div>');
-				$('#event_' + idx).load('templates/event.html');
-			}; 
-
-			for (var idx = 1; idx < 5; idx++){
-				$('#template_work').append('<div id="work_' + idx + '" class="item"></div>');
-				$('#work_' + idx).load('templates/work.html');
-			};
-
-			for (var idx = 7; idx > 0; idx--){
-				$('#template_publication').append('<div id="publication_' + idx + '" class="item"></div>');
-				$('#publication_' + idx).load('templates/publications.html');
-			};
-
-			for (var idx = 1; idx < 5; idx++){
-				$('#template_education').append('<div id="education_' + idx + '" class="item"></div>');
-				$('#education_' + idx).load('templates/education.html');
-			};
-		</script>
-
-		<script type="text/javascript">
-			$(document).ready(function(){	
-				$.getJSON('data/events.json', function(json_data) {
-					for (var idx = 9; idx > 0; idx--){	
-						idx_str = String(idx);
-						$('#event_' + idx + ' font').text(json_data[idx_str]["event_title"]);
-						$('#event_' + idx + ' .header').text(json_data[idx_str]["event_date"]);
-					}
-				}); 
-
-				$.getJSON('data/work.json', function(json_data) {
-					for (var idx = 1; idx < 5; idx++){	
-						idx_str = String(idx);
-						$('#work_' + idx + ' img').attr('src', json_data[idx_str]["img"]);
-						$('#work_' + idx + ' .header').text(json_data[idx_str]["title"]);
-						$('#work_' + idx + ' .work_location_1 a').attr('href', json_data[idx_str]["url"]);
-						$('#work_' + idx + ' .work_location_1 a').text(json_data[idx_str]["company"]);
-						$('#work_' + idx + ' .work_location_2').text(json_data[idx_str]["location"]);
-						$('#work_' + idx + ' .extra').text(json_data[idx_str]["date"]);
-					}
-				});	
-
-				$.getJSON('data/publications.json', function(json_data) {
-					for (var idx = 7; idx > 0; idx--){	
-						idx_str = String(idx);
-						$('#publication_' + idx + ' img').attr('src', json_data[idx_str]["img"]);
-						$('#publication_' + idx + ' .header').text(json_data[idx_str]["type"]);
-						$('#publication_' + idx + ' .date').text(json_data[idx_str]["date"]);
-						$('#publication_' + idx + ' .doi').text(json_data[idx_str]["doi"]);
-						$('#publication_' + idx + ' .description p').text(json_data[idx_str]["reference"]);
-						$('#publication_' + idx + ' .link').attr('href', json_data[idx_str]["url"]);
-						$('#publication_' + idx + ' .bibtex').attr('href', json_data[idx_str]["bibtex"]);
-					}
-				});	
-
-				$.getJSON('data/education.json', function(json_data) {
-					for (var idx = 1; idx < 5; idx++){	
-						idx_str = String(idx);
-						$('#education_' + idx + ' img').attr('src', json_data[idx_str]["img"]);
-						$('#education_' + idx + ' .header').text(json_data[idx_str]["title"]);
-						$('#education_' + idx + ' .university_location_1 a').attr('href', json_data[idx_str]["url"]);
-						$('#education_' + idx + ' .university_location_1 a').text(json_data[idx_str]["university"]);
-						$('#education_' + idx + ' .university_location_2').text(json_data[idx_str]["location"]);
-						$('#education_' + idx + ' .extra').text(json_data[idx_str]["date"]);
-					}
-				});	
-			}); 
 		</script>
 	</body>
 </html>
