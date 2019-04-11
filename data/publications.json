@@ -58,10 +58,10 @@
 		"img": "img/ieee.png",
 		"type": "International Conference",
 		"date": "24 - 25 November 2018",
-		"doi": "DOI: ",
+		"doi": "DOI: 10.1109/ICASS.2018.8651969",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'One-Class and Bi-Class SVM Classifier Comparison for Automatic Facial Expression Recognition,' in International Conference on Applied Smart Systems (ICASS’18), IEEE, 2018, pp. 1-6.",
 		"bibtex": "bibtex/yaddaden_06.bib",
-		"url": "",
+		"url": "https://doi.org/10.1109/ICASS.2018.8651969",
 		"year": "2018",
 		"pdf_file":""
 	},
@@ -69,10 +69,10 @@
 		"img": "img/ieee.png",
 		"type": "International Conference",
 		"date": "26 - 27 November 2018",
-		"doi": "DOI: ",
+		"doi": "DOI: 10.1109/SIVA.2018.8661026",
 		"reference": "Y. Yaddaden, M. Adda, A. Bouzouane, S. Gaboury, B. Bouchard, 'Facial Sub-region for automatic Emotion Recognition using Local Binary Patterns,' in International Conference on Signal, Image, Vision and their Applications (SIVA’18), IEEE, 2018, pp. 1-6.",
 		"bibtex": "bibtex/yaddaden_07.bib",
-		"url": "",
+		"url": "https://doi.org/10.1109/SIVA.2018.8661026",
 		"year": "2018",
 		"pdf_file":""
 	}
