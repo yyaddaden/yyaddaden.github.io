@@ -204,7 +204,7 @@
 					callback(json_data);
 				});
 			}
-			var nbr_elt = {"events":9, "work":4, "publications":7, "education":4};
+			var nbr_elt = {"events":9, "work":5, "publications":7, "education":4};
 
 			/* news & events templates */
 			for (var idx = nbr_elt["events"]; idx > 0; idx--){	
@@ -213,7 +213,7 @@
 			}
 
 			/* work templates */
-			for (var idx = 1; idx <= nbr_elt["work"]; idx++){	
+			for (var idx = nbr_elt["work"]; idx > 0; idx--){	
 				$('#template_work').append('<div id="work_' + idx + '" class="item"></div>');
 				$('#work_' + idx).load('templates/work.html');
 			}

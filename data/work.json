@@ -1,21 +1,13 @@
 {
 	"1":{
-		"img": "img/uqar.png",
-		"title": "Teaching Assistant | Computer Sciences",
-		"company": "Université du Québec à Rimouski",
-		"url": "https://www.uqar.ca/",
-		"location": "(Québec, Canada)",
-		"date": "September 2017 - Now"	
-	},
-	"2":{
 		"img": "img/icosnet.png",
-		"title": "Head of Network & System Infrastructure",
+		"title": "Quality Engineer",
 		"company": "ICOSNET",
 		"url": "https://www.icosnet.com/",
 		"location": "(Algiers, Algeria)",
-		"date": "May 2015 - August 2015"	
+		"date": "August 2012 - January 2013"	
 	},
-	"3":{
+	"2":{
 		"img": "img/icosnet.png",
 		"title": "Information System Engineer",
 		"company": "ICOSNET",
@@ -23,12 +15,28 @@
 		"location": "(Algiers, Algeria)",
 		"date": "January 2013 - May 2015"	
 	},
-	"4":{
+	"3":{
 		"img": "img/icosnet.png",
-		"title": "Quality Engineer",
+		"title": "Head of Network & System Infrastructure",
 		"company": "ICOSNET",
 		"url": "https://www.icosnet.com/",
 		"location": "(Algiers, Algeria)",
-		"date": "August 2012 - January 2013"	
+		"date": "May 2015 - August 2015"	
+	},
+	"4":{
+		"img": "img/uqar.png",
+		"title": "Teaching Assistant | Computer Sciences",
+		"company": "Université du Québec à Rimouski",
+		"url": "https://www.uqar.ca/",
+		"location": "(Québec, Canada)",
+		"date": "September 2017 - Now"	
+	},
+	"5":{
+		"img": "img/ulaval.png",
+		"title": "Python/oTree Programmer | Economy Research Project",
+		"company": "Université de Laval",
+		"url": "http://www.ulaval.ca/",
+		"location": "(Québec, Canada)",
+		"date": "October 2018 - December 2018"	
 	}
 }
