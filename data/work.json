@@ -35,8 +35,16 @@
 		"img": "img/ulaval.png",
 		"title": "Python/oTree Programmer | Economy Research Project",
 		"company": "Université de Laval",
-		"url": "http://www.ulaval.ca/",
+		"url": "https://www.ulaval.ca/",
 		"location": "(Québec, Canada)",
 		"date": "October 2018 - Now"	
+	},
+	"5":{
+		"img": "img/climoilou.png",
+		"title": "Teacher | Computer Sciences",
+		"company": "Cégep Limoilou",
+		"url": "https://www.cegeplimoilou.ca/",
+		"location": "(Québec, Canada)",
+		"date": "April 2019 - Now"	
 	}
 }
