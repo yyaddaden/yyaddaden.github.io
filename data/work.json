@@ -29,7 +29,7 @@
 		"company": "Université du Québec à Rimouski",
 		"url": "https://www.uqar.ca/",
 		"location": "(Québec, Canada)",
-		"date": "September 2017 - Now"	
+		"date": "September 2017 - April 2019"	
 	},
 	"5":{
 		"img": "img/ulaval.png",
@@ -46,5 +46,13 @@
 		"url": "https://www.cegeplimoilou.ca/",
 		"location": "(Québec, Canada)",
 		"date": "April 2019 - Now"	
+	},
+	"7":{
+		"img": "img/uqar.png",
+		"title": "Teacher | Computer Sciences",
+		"company": "Université du Québec à Rimouski",
+		"url": "https://www.uqar.ca/",
+		"location": "(Québec, Canada)",
+		"date": "August 2019 - Now"	
 	}
 }
